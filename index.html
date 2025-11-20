@@ -47,8 +47,7 @@
       "sameAs": [
         "https://github.com/mrgr4yhat",
         "https://www.linkedin.com/in/mrgr4yhat/", 
-        "https://x.com/mrgr4yhat",
-        "https://www.instagram.com/midhun.mohanan_",
+        "https://twitter.com/mrgr4yhat",
         "https://www.exploit-db.com/ghdb/7834"
       ],
       "address": {
@@ -332,12 +331,12 @@
                     </div>
                     <div class="glass-panel p-4 md:p-6 text-center flex flex-col items-center justify-center hover:border-cyber-primary transition-colors group">
                         <i class="fas fa-briefcase text-2xl md:text-3xl text-cyber-dim mb-3 group-hover:text-cyber-secondary transition-colors"></i>
-                        <div class="text-3xl md:text-4xl font-display font-bold text-cyber-secondary mb-1">5</div>
+                        <div id="years-experience" class="text-3xl md:text-4xl font-display font-bold text-cyber-secondary mb-1">5</div>
                         <div class="text-[10px] md:text-xs text-gray-500 uppercase tracking-wider">Years Experience</div>
                     </div>
                     <div class="glass-panel p-4 md:p-6 text-center flex flex-col items-center justify-center hover:border-cyber-primary transition-colors group">
                         <i class="fas fa-crosshairs text-2xl md:text-3xl text-cyber-dim mb-3 group-hover:text-cyber-accent transition-colors"></i>
-                        <div class="text-3xl md:text-4xl font-display font-bold text-cyber-accent mb-1">450+</div>
+                        <div id="assessments-completed" class="text-3xl md:text-4xl font-display font-bold text-cyber-accent mb-1">450+</div>
                         <div class="text-[10px] md:text-xs text-gray-500 uppercase tracking-wider">Assessments Completed</div>
                     </div>
                     <div class="glass-panel p-4 md:p-6 text-center flex flex-col items-center justify-center hover:border-cyber-primary transition-colors group">
@@ -529,6 +528,18 @@
                     <div class="skill-container group">
                         <div class="flex justify-between mb-1">
                             <span class="text-sm font-bold text-cyber-secondary flex items-center">
+                                <i class="fas fa-mask mr-2"></i> EDR EVASION
+                            </span>
+                            <span class="text-sm text-gray-400">75%</span>
+                        </div>
+                        <div class="w-full bg-gray-900 h-2 rounded-full overflow-hidden border border-gray-800 group-hover:border-cyber-secondary/30 transition-colors">
+                            <div class="bg-cyber-secondary h-2 skill-fill shadow-[0_0_10px_rgba(0,184,255,0.5)]" data-width="75%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-container group">
+                        <div class="flex justify-between mb-1">
+                            <span class="text-sm font-bold text-cyber-secondary flex items-center">
                                 <i class="fas fa-server mr-2"></i> API SECURITY
                             </span>
                             <span class="text-sm text-gray-400">90%</span>
@@ -703,6 +714,40 @@
       (function() {
         // Update Footer Year automatically
         document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // --- Dynamic Stats Calculation ---
+        const today = new Date();
+        const currentYear = today.getFullYear();
+        const baseYear = 2025; // Base year for calculations
+
+        // 1. Dynamic Experience: Base 5 years in 2025, +1 for every year after
+        const baseExperience = 5;
+        let yearsExp = baseExperience;
+        
+        if (currentYear > baseYear) {
+            yearsExp += (currentYear - baseYear);
+        }
+        
+        // Update the DOM for Experience
+        const expElement = document.getElementById('years-experience');
+        if(expElement) {
+            expElement.textContent = yearsExp;
+        }
+
+        // 2. Dynamic Assessments: Base 450 in 2025, +50 for every year after
+        const baseAssessments = 450;
+        let totalAssessments = baseAssessments;
+        
+        if (currentYear > baseYear) {
+            totalAssessments += (currentYear - baseYear) * 50;
+        }
+        
+        // Update the DOM for Assessments
+        const assessElement = document.getElementById('assessments-completed');
+        if(assessElement) {
+            assessElement.textContent = totalAssessments + "+";
+        }
+        // ---------------------------------
 
         // Mouse Spotlight Effect
         const spotlight = document.querySelector('.spotlight');
