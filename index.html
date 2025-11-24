@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- SEO & Meta Tags -->
     <title>Midhun Mohanan | Security Researcher | Red Teamer & AppSec Expert</title>
     <meta name="description" content="Midhun Mohanan is an Offensive Security Consultant and Red Teamer with 5+ years of experience in Web, Mobile, API Pentesting, EDR Evasion, and Adversary Simulation.">
     <meta name="keywords" content="Midhun Mohanan, Midhun Mohanan Kerala, Security Researcher, Penetration Tester, Red Teamer, Offensive Security, AppSec, Ethical Hacker, Cyber Security Consultant, Android Security, API Security, EDR Evasion, CRTP, CAP, Bug Bounty, mrgr4yhat">
@@ -14,22 +15,26 @@
     <meta name="theme-color" content="#050505">
     <link rel="canonical" href="https://midhunmohanan101.github.io/">
     
+    <!-- Local SEO Tags -->
     <meta name="geo.region" content="IN-KL" />
     <meta name="geo.placename" content="Kerala" />
     <meta name="geo.position" content="10.8505;76.2711" />
     <meta name="ICBM" content="10.8505, 76.2711" />
 
+    <!-- Open Graph / Facebook / LinkedIn -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Midhun Mohanan Portfolio">
     <meta property="og:url" content="https://midhunmohanan101.github.io/">
     <meta property="og:title" content="Midhun Mohanan | Security Researcher & Red Teamer">
     <meta property="og:description" content="Offensive Security Consultant specializing in Red Teaming, AppSec, and Advanced Pentesting. View my portfolio, achievements, and technical arsenal.">
 
+    <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://midhunmohanan101.github.io/">
     <meta property="twitter:title" content="Midhun Mohanan | Security Researcher & Red Teamer">
     <meta property="twitter:description" content="Offensive Security Consultant specializing in Red Teaming, AppSec, and Advanced Pentesting.">
     
+    <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "http://schema.org",
@@ -666,207 +671,7 @@
     </footer>
 
     <script>
-      (function() {
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-
-        const today = new Date();
-        const currentYear = today.getFullYear();
-        const baseYear = 2025; 
-
-        const baseExperience = 5;
-        let yearsExp = baseExperience;
-        
-        if (currentYear > baseYear) {
-            yearsExp += (currentYear - baseYear);
-        }
-        
-        const expElement = document.getElementById('years-experience');
-        if(expElement) {
-            expElement.textContent = yearsExp;
-        }
-
-        const baseAssessments = 450;
-        let totalAssessments = baseAssessments;
-        
-        if (currentYear > baseYear) {
-            totalAssessments += (currentYear - baseYear) * 50;
-        }
-        
-        const assessElement = document.getElementById('assessments-completed');
-        if(assessElement) {
-            assessElement.textContent = totalAssessments + "+";
-        }
-
-        const spotlight = document.querySelector('.spotlight');
-        if(spotlight) {
-            document.addEventListener('mousemove', (e) => {
-                const x = e.clientX;
-                const y = e.clientY;
-                spotlight.style.setProperty('--x', x + 'px');
-                spotlight.style.setProperty('--y', y + 'px');
-            });
-        }
-
-        const texts = [
-            "Security Researcher",
-            "Red Teamer",
-            "Pentester",
-            "Developer",
-            "CTF Player",
-            "InfoSecian"
-        ];
-        const typingText = document.getElementById('typing-text');
-        let textIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
-
-        function type() {
-            if(!typingText) return;
-            const currentText = texts[textIndex];
-            
-            if (isDeleting) {
-                typingText.textContent = currentText.substring(0, charIndex - 1);
-                charIndex--;
-            } else {
-                typingText.textContent = currentText.substring(0, charIndex + 1);
-                charIndex++;
-            }
-
-            if (!isDeleting && charIndex === currentText.length) {
-                setTimeout(() => isDeleting = true, 2000);
-            } else if (isDeleting && charIndex === 0) {
-                isDeleting = false;
-                textIndex = (textIndex + 1) % texts.length;
-            }
-
-            const speed = isDeleting ? 50 : 100;
-            setTimeout(type, speed);
-        }
-
-        setTimeout(type, 1000);
-
-        const observerOptions = {
-            threshold: 0.5
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const bars = entry.target.querySelectorAll('.skill-fill');
-                    bars.forEach(bar => {
-                        bar.style.width = bar.getAttribute('data-width');
-                    });
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-
-        const skillsSection = document.getElementById('skills');
-        if (skillsSection) {
-            observer.observe(skillsSection);
-        }
-
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return; 
-                const target = document.querySelector(targetId);
-                if(target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        const canvas = document.getElementById('hud-canvas');
-        if (canvas) {
-            const ctx = canvas.getContext('2d');
-            let w, h;
-            const elements = [];
-            const elementCount = 25; 
-            const colors = ['#00ff9d', '#00b8ff', '#ffffff']; 
-
-            function resizeCanvas() {
-                w = canvas.width = window.innerWidth;
-                h = canvas.height = window.innerHeight;
-            }
-            window.addEventListener('resize', resizeCanvas);
-            resizeCanvas();
-
-            class HUDElement {
-                constructor() {
-                    this.reset();
-                }
-                
-                reset() {
-                    this.x = Math.random() * w;
-                    this.y = Math.random() * h;
-                    this.size = Math.random() * 50 + 10;
-                    this.speed = (Math.random() - 0.5) * 1;
-                    this.rotation = Math.random() * Math.PI * 2;
-                    this.rotSpeed = (Math.random() - 0.5) * 0.02;
-                    this.type = Math.floor(Math.random() * 3); 
-                    this.color = colors[Math.floor(Math.random() * colors.length)];
-                    this.opacity = Math.random() * 0.4 + 0.05;
-                }
-
-                update() {
-                    this.rotation += this.rotSpeed;
-                    this.x += this.speed;
-                    if(this.x > w + 100 || this.x < -100) this.reset();
-                }
-
-                draw() {
-                    ctx.save();
-                    ctx.translate(this.x, this.y);
-                    ctx.rotate(this.rotation);
-                    ctx.strokeStyle = this.color;
-                    ctx.lineWidth = 1;
-                    ctx.globalAlpha = this.opacity;
-                    
-                    ctx.beginPath();
-                    if (this.type === 0) { 
-                        ctx.arc(0, 0, this.size, 0, Math.PI * 2 * Math.random());
-                        ctx.stroke();
-                        ctx.beginPath();
-                        ctx.arc(0, 0, this.size * 0.7, 0, Math.PI * 2);
-                        ctx.stroke();
-                    } else if (this.type === 1) { 
-                        for (let i = 0; i < 6; i++) {
-                            ctx.lineTo(this.size * Math.cos(i * Math.PI / 3), this.size * Math.sin(i * Math.PI / 3));
-                        }
-                        ctx.closePath();
-                        ctx.stroke();
-                    } else { 
-                        ctx.moveTo(-this.size, 0); ctx.lineTo(this.size, 0);
-                        ctx.moveTo(0, -this.size); ctx.lineTo(0, this.size);
-                        ctx.stroke();
-                    }
-                    ctx.restore();
-                }
-            }
-
-            function init() {
-                for(let i=0; i<elementCount; i++) {
-                    elements.push(new HUDElement());
-                }
-            }
-
-            function animate() {
-                ctx.clearRect(0, 0, w, h);
-                elements.forEach(el => {
-                    el.update();
-                    el.draw();
-                });
-                requestAnimationFrame(animate);
-            }
-
-            init();
-            animate();
-        }
-      })();
+(function(){var d=document,g=d.getElementById.bind(d),q=d.querySelector.bind(d),a=d.querySelectorAll.bind(d);var t=new Date(),y=t.getFullYear(),b=2025;g('current-year').textContent=y;var e=5+(y>b?y-b:0),el=g('years-experience');if(el)el.textContent=e;var as=450+(y>b?(y-b)*50:0),al=g('assessments-completed');if(al)al.textContent=as+"+";var sp=q('.spotlight');if(sp)d.addEventListener('mousemove',function(e){sp.style.setProperty('--x',e.clientX+'px');sp.style.setProperty('--y',e.clientY+'px')});var txt=["Security Researcher","Red Teamer","Pentester","Developer","CTF Player","InfoSecian"],elT=g('typing-text'),ti=0,ci=0,id=false;function ty(){if(!elT)return;var c=txt[ti];elT.textContent=c.substring(0,id?ci--:ci++);if(!id&&ci===c.length)setTimeout(function(){id=true},2000);else if(id&&ci===0){id=false;ti=(ti+1)%txt.length}setTimeout(ty,id?50:100)}setTimeout(ty,1000);var io=new IntersectionObserver(function(e){e.forEach(function(i){if(i.isIntersecting){var b=i.target.querySelectorAll('.skill-fill');b.forEach(function(x){x.style.width=x.getAttribute('data-width')});io.unobserve(i.target)}})},{threshold:.5});var sk=g('skills');if(sk)io.observe(sk);a('a[href^="#"]').forEach(function(l){l.addEventListener('click',function(e){e.preventDefault();var h=this.getAttribute('href');if(h==='#')return;var t=q(h);if(t)t.scrollIntoView({behavior:'smooth'})})});var cv=g('hud-canvas');if(cv){var x=cv.getContext('2d'),w,h,es=[],cnt=25,cols=['#00ff9d','#00b8ff','#ffffff'];function rz(){w=cv.width=window.innerWidth;h=cv.height=window.innerHeight}window.addEventListener('resize',rz);rz();function H(){this.rst()}H.prototype.rst=function(){this.x=Math.random()*w;this.y=Math.random()*h;this.s=Math.random()*50+10;this.sp=(Math.random()-.5);this.r=Math.random()*Math.PI*2;this.rs=(Math.random()-.5)*.02;this.t=Math.floor(Math.random()*3);this.c=cols[Math.floor(Math.random()*cols.length)];this.o=Math.random()*.4+.05};H.prototype.up=function(){this.r+=this.rs;this.x+=this.sp;if(this.x>w+100||this.x<-100)this.rst()};H.prototype.dr=function(){x.save();x.translate(this.x,this.y);x.rotate(this.r);x.strokeStyle=this.c;x.lineWidth=1;x.globalAlpha=this.o;x.beginPath();if(this.t===0){x.arc(0,0,this.s,0,Math.PI*2*Math.random());x.stroke();x.beginPath();x.arc(0,0,this.s*.7,0,Math.PI*2);x.stroke()}else if(this.t===1){for(var i=0;i<6;i++)x.lineTo(this.s*Math.cos(i*Math.PI/3),this.s*Math.sin(i*Math.PI/3));x.closePath();x.stroke()}else{x.moveTo(-this.s,0);x.lineTo(this.s,0);x.moveTo(0,-this.s);x.lineTo(0,this.s);x.stroke()}x.restore()};for(var i=0;i<cnt;i++)es.push(new H());function an(){x.clearRect(0,0,w,h);es.forEach(function(e){e.up();e.dr()});requestAnimationFrame(an)}an()}})();
     </script>
 </body>
 </html>
