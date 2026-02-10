@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midhun Mohanan | Offensive Security Researcher | AppSec</title>
-    <meta name="description" content="Midhun Mohanan is an Offensive Security Consultant and Red Teamer with 5+ years of experience in Web, Mobile, API Pentesting, EDR Evasion, and Adversary Simulation.">
+    <meta name="description" content="Midhun Mohanan is an Offensive Security Consultant and Red Teamer with 4.5+ years of experience in Web, Mobile, API Pentesting, EDR Evasion, and Adversary Simulation.">
     <meta name="keywords" content="Midhun Mohanan, Midhun Mohanan Kerala, Security Researcher, Penetration Tester, Red Teamer, Offensive Security, AppSec, Ethical Hacker, Cyber Security Consultant, Android Security, API Security, EDR Evasion, CRTP, CRTA, CAP, Bug Bounty, mrgr4yhat">
     <meta name="author" content="Midhun Mohanan">
     <meta name="robots" content="index, follow">
@@ -30,6 +30,23 @@
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #050505; color: #e0e0e0; cursor: default; overflow-x: hidden; margin: 0; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0a0f; }
+        ::-webkit-scrollbar-thumb { background: #00ff9d; }
+        #hud-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; opacity: 0.25; will-change: transform; }
+        .spotlight { background: radial-gradient(800px circle at var(--x) var(--y), rgba(0, 255, 157, 0.04), transparent 40%); position: fixed; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none; z-index: 2; will-change: background; }
+        .glitch-wrapper:hover .glitch-text { animation: glitch 0.3s cubic-bezier(.25, .46, .45, .94) both infinite; color: #00ff9d; }
+        .glass-panel { background: rgba(10, 10, 16, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(0, 255, 157, 0.1); box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; }
+        .glass-panel:hover { border-color: rgba(0, 255, 157, 0.4); box-shadow: 0 0 25px rgba(0, 255, 157, 0.05); background: rgba(10, 10, 16, 0.9); }
+        .cursor { display: inline-block; width: 10px; background-color: #00ff9d; animation: blink 1s infinite; }
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+        .typing-container { min-height: 2rem; display: flex; align-items: center; }
+        .skill-fill { width: 0; transition: width 1.5s ease-out; }
+        .hex-card { clip-path: polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%); }
+        @media (max-width: 768px) { .hex-card { clip-path: none; border-radius: 0.5rem; } }
+    </style>
     <script>
         tailwind.config = {
             theme: {
@@ -68,23 +85,6 @@
             }
         }
     </script>
-    <style>
-        body { background-color: #050505; color: #e0e0e0; cursor: default; overflow-x: hidden; margin: 0; }
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #0a0a0f; }
-        ::-webkit-scrollbar-thumb { background: #00ff9d; }
-        #hud-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; opacity: 0.25; will-change: transform; }
-        .spotlight { background: radial-gradient(800px circle at var(--x) var(--y), rgba(0, 255, 157, 0.04), transparent 40%); position: fixed; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none; z-index: 2; will-change: background; }
-        .glitch-wrapper:hover .glitch-text { animation: glitch 0.3s cubic-bezier(.25, .46, .45, .94) both infinite; color: #00ff9d; }
-        .glass-panel { background: rgba(10, 10, 16, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(0, 255, 157, 0.1); box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; }
-        .glass-panel:hover { border-color: rgba(0, 255, 157, 0.4); box-shadow: 0 0 25px rgba(0, 255, 157, 0.05); background: rgba(10, 10, 16, 0.9); }
-        .cursor { display: inline-block; width: 10px; background-color: #00ff9d; animation: blink 1s infinite; }
-        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
-        .typing-container { min-height: 2rem; display: flex; align-items: center; }
-        .skill-fill { width: 0; transition: width 1.5s ease-out; }
-        .hex-card { clip-path: polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%); }
-        @media (max-width: 768px) { .hex-card { clip-path: none; border-radius: 0.5rem; } }
-    </style>
 </head>
 <body class="font-mono relative">
     <canvas id="hud-canvas"></canvas>
@@ -189,7 +189,7 @@
                 <div class="grid grid-cols-2 gap-4">
                     <div class="glass-panel p-4 md:p-6 text-center flex flex-col items-center justify-center hover:border-cyber-primary transition-colors group">
                         <i class="fas fa-briefcase text-2xl md:text-3xl text-cyber-dim mb-3 group-hover:text-cyber-secondary transition-colors"></i>
-                        <div id="years-experience" class="text-3xl md:text-4xl font-display font-bold text-cyber-secondary mb-1">5</div>
+                        <div id="years-experience" class="text-3xl md:text-4xl font-display font-bold text-cyber-secondary mb-1">4.5</div>
                         <div class="text-[10px] md:text-xs text-gray-500 uppercase tracking-wider">Years Experience</div>
                     </div>
                     <div class="glass-panel p-4 md:p-6 text-center flex flex-col items-center justify-center hover:border-cyber-primary transition-colors group">
@@ -509,7 +509,7 @@
             </a>
         </div>
         <div class="mb-2">
-            &copy; Copyright [<span id="current-year">2025</span>]. All Rights Reserved.
+            &copy; Copyright [<span id="current-year">2026</span>]. All Rights Reserved.
         </div>
         <div class="mb-2">
             Made with <i class="fas fa-heart text-cyber-accent mx-1 animate-pulse"></i> by Midhun Mohanan
@@ -519,7 +519,7 @@
         </div>
     </footer>
     <script>
-(function(){var d=document,g=d.getElementById.bind(d),q=d.querySelector.bind(d),a=d.querySelectorAll.bind(d);var t=new Date(),y=t.getFullYear(),b=2025;g('current-year').textContent=y;var baseExp=5;var yearsExp=baseExp;if(y>b){yearsExp+=(y-b)}var el=g('years-experience');if(el)el.textContent=yearsExp;var baseAssess=450;var totalAssess=baseAssess;if(y>b){totalAssess+=(y-b)*50}var al=g('assessments-completed');if(al)al.textContent=totalAssess+"+";var sp=q('.spotlight');if(sp){var mv=function(e){var X=e.clientX||(e.touches?e.touches[0].clientX:0);var Y=e.clientY||(e.touches?e.touches[0].clientY:0);sp.style.setProperty('--x',X+'px');sp.style.setProperty('--y',Y+'px')};d.addEventListener('mousemove',mv);d.addEventListener('touchmove',mv)}var txt=["Security Researcher","Red Teamer","Pentester","Developer","CTF Player","InfoSecian"],elT=g('typing-text'),ti=0,ci=0,id=false;function ty(){if(!elT)return;var c=txt[ti];elT.textContent=c.substring(0,id?ci--:ci++);if(!id&&ci===c.length)setTimeout(function(){id=true},2000);else if(id&&ci===0){id=false;ti=(ti+1)%txt.length}setTimeout(ty,id?50:100)}setTimeout(ty,1000);var io=new IntersectionObserver(function(e){e.forEach(function(i){if(i.isIntersecting){var b=i.target.querySelectorAll('.skill-fill');b.forEach(function(x){x.style.width=x.getAttribute('data-width')});io.unobserve(i.target)}})},{threshold:.5});var sk=g('skills');if(sk)io.observe(sk);a('a[href^="#"]').forEach(function(l){l.addEventListener('click',function(e){e.preventDefault();var h=this.getAttribute('href');if(h==='#')return;var t=q(h);if(t)t.scrollIntoView({behavior:'smooth'})})});var cv=g('hud-canvas');if(cv){var x=cv.getContext('2d'),w,h,es=[],cnt=25,cols=['#00ff9d','#00b8ff','#ffffff'];function rz(){w=cv.width=window.innerWidth;h=cv.height=window.innerHeight}window.addEventListener('resize',rz);rz();function H(){this.rst()}H.prototype.rst=function(){this.x=Math.random()*w;this.y=Math.random()*h;this.s=Math.random()*50+10;this.sp=(Math.random()-.5);this.r=Math.random()*Math.PI*2;this.rs=(Math.random()-.5)*.02;this.t=Math.floor(Math.random()*3);this.c=cols[Math.floor(Math.random()*cols.length)];this.o=Math.random()*.4+.05};H.prototype.up=function(){this.r+=this.rs;this.x+=this.sp;if(this.x>w+100||this.x<-100)this.rst()};H.prototype.dr=function(){x.save();x.translate(this.x,this.y);x.rotate(this.r);x.strokeStyle=this.c;x.lineWidth=1;x.globalAlpha=this.o;x.beginPath();if(this.t===0){x.arc(0,0,this.s,0,Math.PI*2*Math.random());x.stroke();x.beginPath();x.arc(0,0,this.s*.7,0,Math.PI*2);x.stroke()}else if(this.t===1){for(var i=0;i<6;i++)x.lineTo(this.s*Math.cos(i*Math.PI/3),this.s*Math.sin(i*Math.PI/3));x.closePath();x.stroke()}else{x.moveTo(-this.s,0);x.lineTo(this.s,0);x.moveTo(0,-this.s);x.lineTo(0,this.s);x.stroke()}x.restore()};for(var i=0;i<cnt;i++)es.push(new H());function an(){x.clearRect(0,0,w,h);es.forEach(function(e){e.up();e.dr()});requestAnimationFrame(an)}an()}})();
+    (function(){var d=document,w=window,e=d.getElementById.bind(d),q=d.querySelector.bind(d),qa=d.querySelectorAll.bind(d);d.addEventListener("DOMContentLoaded",()=>{var n=new Date,y=n.getFullYear(),ye=e("current-year");ye&&(ye.textContent=y);var sd=new Date("2021-08-01"),df=n-sd,dy=df/315576e5,ee=e("years-experience");ee&&(ee.textContent=dy.toFixed(1));var ba=450,ta=ba;y>2026&&(ta+=(y-2026)*50);var ae=e("assessments-completed");ae&&(ae.textContent=ta+"+");var sp=q(".spotlight");if(sp){var mv=function(a){var x=a.clientX||(a.touches?a.touches[0].clientX:0),y=a.clientY||(a.touches?a.touches[0].clientY:0);sp.style.setProperty("--x",x+"px");sp.style.setProperty("--y",y+"px")};d.addEventListener("mousemove",mv),d.addEventListener("touchmove",mv)}var tx=["Security Researcher","Red Teamer","Pentester","Developer","CTF Player","InfoSecian"],et=e("typing-text"),ti=0,ci=0,id=!1;function ty(){if(!et)return;var a=tx[ti];et.textContent=a.substring(0,id?ci--:ci++),!id&&ci===a.length?setTimeout(()=>{id=!0},2e3):id&&0===ci&&(id=!1,ti=(ti+1)%tx.length),setTimeout(ty,id?50:100)}setTimeout(ty,1e3);var io=new IntersectionObserver(function(a){a.forEach(function(b){if(b.isIntersecting){var c=b.target.querySelectorAll(".skill-fill");c.forEach(function(d){d.style.width=d.getAttribute("data-width")}),io.unobserve(b.target)}})},{threshold:.5}),sk=e("skills");sk&&io.observe(sk);qa('a[href^="#"]').forEach(function(a){a.addEventListener("click",function(b){b.preventDefault();var c=this.getAttribute("href");if("#"!==c){var d=q(c);d&&d.scrollIntoView({behavior:"smooth"})}})});var cv=e("hud-canvas");if(cv){var cx=cv.getContext("2d"),cw,ch,es=[],cn=25,co=["#00ff9d","#00b8ff","#ffffff"];function rz(){cw=cv.width=w.innerWidth,ch=cv.height=w.innerHeight}w.addEventListener("resize",rz),rz();function H(){this.r()}H.prototype.r=function(){this.x=Math.random()*cw,this.y=Math.random()*ch,this.s=50*Math.random()+10,this.dx=Math.random()-.5,this.a=2*Math.random()*Math.PI,this.da=.02*(Math.random()-.5),this.t=Math.floor(3*Math.random()),this.c=co[Math.floor(Math.random()*co.length)],this.o=.4*Math.random()+.05},H.prototype.u=function(){this.a+=this.da,this.x+=this.dx,(this.x>cw+100||this.x<-100)&&this.r()},H.prototype.d=function(){cx.save(),cx.translate(this.x,this.y),cx.rotate(this.a),cx.strokeStyle=this.c,cx.lineWidth=1,cx.globalAlpha=this.o,cx.beginPath(),0===this.t?(cx.arc(0,0,this.s,0,2*Math.PI*Math.random()),cx.stroke(),cx.beginPath(),cx.arc(0,0,.7*this.s,0,2*Math.PI),cx.stroke()):1===this.t?(function(){for(var a=0;a<6;a++)cx.lineTo(this.s*Math.cos(a*Math.PI/3),this.s*Math.sin(a*Math.PI/3));cx.closePath(),cx.stroke()}.call(this)):(cx.moveTo(-this.s,0),cx.lineTo(this.s,0),cx.moveTo(0,-this.s),cx.lineTo(0,this.s),cx.stroke()),cx.restore()};for(var i=0;i<cn;i++)es.push(new H);function an(){cx.clearRect(0,0,cw,ch),es.forEach(function(a){a.u(),a.d()}),requestAnimationFrame(an)}an()}})})()
     </script>
 </body>
 </html>
