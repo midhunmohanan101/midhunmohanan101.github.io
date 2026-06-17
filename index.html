@@ -12,6 +12,7 @@
     <meta name="language" content="English">
     <meta name="theme-color" content="#050505">
     <link rel="canonical" href="https://midhunmohanan101.github.io/">
+    <link rel="help" href="llms.txt" type="text/plain">
     <meta name="geo.region" content="IN-KL" />
     <meta name="geo.placename" content="Kerala" />
     <meta name="geo.position" content="10.8505;76.2711" />
@@ -239,7 +240,7 @@
                     <span class="font-display font-bold text-base md:text-lg text-white tracking-wider">NOKIA</span>
                     <span class="text-xs text-gray-500 mt-1">Acknowledgment</span>
                 </div>
-                <div class="col-span-2 md:col-span-3 lg:col-span-4 mt-4">
+                <div class="col-span-2 md:col-span-3 lg:col-span-4 mt-4 flex flex-col gap-4">
                     <div class="glass-panel p-6 flex flex-col md:flex-row items-start md:items-center justify-between border border-cyber-secondary/30 bg-cyber-secondary/5 relative overflow-hidden">
                         <div class="absolute -right-10 -top-10 text-9xl text-cyber-secondary opacity-10 pointer-events-none">
                             <i class="fas fa-database"></i>
@@ -253,6 +254,23 @@
                         <div class="self-start md:self-center">
                             <span class="px-4 py-2 border border-cyber-secondary text-cyber-secondary text-xs md:text-sm font-bold rounded hover:bg-cyber-secondary hover:text-black transition-colors cursor-default">
                                 VERIFIED EXPLOSIVE
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="glass-panel p-6 flex flex-col md:flex-row items-start md:items-center justify-between border border-cyber-accent/30 bg-cyber-accent/5 relative overflow-hidden">
+                        <div class="absolute -right-10 -top-10 text-9xl text-cyber-accent opacity-10 pointer-events-none">
+                            <i class="fas fa-shield-virus"></i>
+                        </div>
+                        <div class="mb-4 md:mb-0">
+                            <h4 class="text-cyber-accent font-bold text-lg md:text-xl mb-1"><i class="fas fa-bug mr-2"></i> CVE-2026-49141</h4>
+                            <a href="https://www.vulncheck.com/advisories/wacrm-authorization-bypass-via-automation-engine-endpoint" target="_blank" class="text-gray-300 hover:text-cyber-accent hover:underline decoration-cyber-accent transition-colors flex items-center text-sm md:text-base">
+                                Authorization Bypass in WACRM Automation Engine <i class="fas fa-external-link-alt text-xs ml-2"></i>
+                            </a>
+                        </div>
+                        <div class="self-start md:self-center">
+                            <span class="px-4 py-2 border border-cyber-accent text-cyber-accent text-xs md:text-sm font-bold rounded hover:bg-cyber-accent hover:text-black transition-colors cursor-default">
+                                CVSS 7.1 HIGH
                             </span>
                         </div>
                     </div>
@@ -512,6 +530,7 @@
         </div>
         <div class="mb-2">
             &copy; Copyright [<span id="current-year">2026</span>]. All Rights Reserved.
+            <a href="llms.txt" class="hidden" aria-hidden="true">llms.txt</a>
         </div>
         <div class="mb-2">
             Made with <i class="fas fa-heart text-cyber-accent mx-1 animate-pulse"></i> by Midhun Mohanan
@@ -522,6 +541,23 @@
     </footer>
     <script>
     (function(){var d=document,w=window,e=d.getElementById.bind(d),q=d.querySelector.bind(d),qa=d.querySelectorAll.bind(d);d.addEventListener("DOMContentLoaded",()=>{var n=new Date,y=n.getFullYear(),ye=e("current-year");ye&&(ye.textContent=y);var sd=new Date("2021-08-01"),df=n-sd,dy=df/315576e5,ee=e("years-experience");ee&&(ee.textContent=dy.toFixed(1));var ba=450,ta=ba;y>2026&&(ta+=(y-2026)*50);var ae=e("engagements-completed");ae&&(ae.textContent=ta+"+");var sp=q(".spotlight");if(sp){var mv=function(a){var x=a.clientX||(a.touches?a.touches[0].clientX:0),y=a.clientY||(a.touches?a.touches[0].clientY:0);sp.style.setProperty("--x",x+"px");sp.style.setProperty("--y",y+"px")};d.addEventListener("mousemove",mv),d.addEventListener("touchmove",mv)}var tx=["Security Researcher","Red Teamer","Pentester","Developer","CTF Player","InfoSecian"],et=e("typing-text"),ti=0,ci=0,id=!1;function ty(){if(!et)return;var a=tx[ti];et.textContent=a.substring(0,id?ci--:ci++),!id&&ci===a.length?setTimeout(()=>{id=!0},2e3):id&&0===ci&&(id=!1,ti=(ti+1)%tx.length),setTimeout(ty,id?50:100)}setTimeout(ty,1e3);var io=new IntersectionObserver(function(a){a.forEach(function(b){if(b.isIntersecting){var c=b.target.querySelectorAll(".skill-fill");c.forEach(function(d){d.style.width=d.getAttribute("data-width")}),io.unobserve(b.target)}})},{threshold:.5}),sk=e("skills");sk&&io.observe(sk);qa('a[href^="#"]').forEach(function(a){a.addEventListener("click",function(b){b.preventDefault();var c=this.getAttribute("href");if("#"!==c){var d=q(c);d&&d.scrollIntoView({behavior:"smooth"})}})});var cv=e("hud-canvas");if(cv){var cx=cv.getContext("2d"),cw,ch,es=[],cn=35,co=["#00ff9d","#00b8ff","#ffffff"];function rz(){cw=cv.width=w.innerWidth;ch=cv.height=w.innerHeight}w.addEventListener("resize",rz),rz();function H(){this.r()}H.prototype.r=function(){this.x=Math.random()*cw,this.y=Math.random()*ch,this.s=40*Math.random()+10,this.dx=(Math.random()-.5)*.5,this.dy=(Math.random()-.5)*.5,this.a=2*Math.random()*Math.PI,this.da=.01*(Math.random()-.5),this.t=Math.floor(3*Math.random()),this.c=co[Math.floor(Math.random()*co.length)],this.o=.3*Math.random()+.05},H.prototype.u=function(){this.a+=this.da;this.x+=this.dx;this.y+=this.dy;if(this.x>cw+50)this.x=-50;if(this.x<-50)this.x=cw+50;if(this.y>ch+50)this.y=-50;if(this.y<-50)this.y=ch+50},H.prototype.d=function(){cx.save(),cx.translate(this.x,this.y),cx.rotate(this.a),cx.strokeStyle=this.c,cx.lineWidth=1,cx.globalAlpha=this.o,cx.beginPath(),0===this.t?(cx.arc(0,0,this.s,0,2*Math.PI*Math.random()),cx.stroke(),cx.beginPath(),cx.arc(0,0,.7*this.s,0,2*Math.PI),cx.stroke()):1===this.t?(function(){for(var a=0;a<6;a++)cx.lineTo(this.s*Math.cos(a*Math.PI/3),this.s*Math.sin(a*Math.PI/3));cx.closePath(),cx.stroke()}.call(this)):(cx.moveTo(-this.s,0),cx.lineTo(this.s,0),cx.moveTo(0,-this.s),cx.lineTo(0,this.s),cx.stroke()),cx.restore()};for(var i=0;i<cn;i++)es.push(new H);function an(){cx.clearRect(0,0,cw,ch),es.forEach(function(a){a.u(),a.d()}),requestAnimationFrame(an)}an()}})})()
+    </script>
+    <script>
+        // Disable right-click context menu
+        document.addEventListener('contextmenu', e => e.preventDefault());
+        
+        // Disable common developer tool keyboard shortcuts
+        document.addEventListener('keydown', e => {
+            if (
+                e.key === 'F12' ||
+                (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'C' || e.key === 'J')) ||
+                (e.metaKey && e.altKey && (e.key === 'i' || e.key === 'I')) ||
+                (e.ctrlKey && e.key === 'u') ||
+                (e.metaKey && e.key === 'u')
+            ) {
+                e.preventDefault();
+            }
+        });
     </script>
 </body>
 </html>
