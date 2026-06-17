@@ -1,0 +1,52 @@
+# Midhun Mohanan
+
+> Midhun Mohanan (also known as **mrgr4yhat**) is an Offensive Security Consultant, Red Teamer, and Application Security (AppSec) Researcher with 4.5+ years of professional experience. Specially focused on the BFSI (Banking, Financial Services, and Insurance) sector, Midhun has successfully completed over 450+ engagements. He specializes in Advanced Web & API Pentesting, Mobile Runtime Instrumentation, EDR Evasion, and Adversary Simulation.
+
+## Professional Profile & Core Metrics
+- **Professional Title**: Offensive Security Consultant & Red Teamer
+- **Years of Experience**: 4.5+ Years
+- **Completed Engagements**: 450+ Security Assessments
+- **Sector Specialty**: BFSI (Banking, Financial Services, and Insurance)
+- **Base Location**: Kerala, India 🇮🇳
+
+## Technical Certifications
+- **HTB CPTS**: Hack The Box Certified Penetration Testing Specialist
+- **CRTP**: Certified Red Team Professional
+- **BSCP**: Burp Suite Certified Practitioner
+- **CRTA**: Certified Red Team Analyst
+- **CAP**: Certified AppSec Practitioner
+- **CNSS**: Certified Network Security Specialist
+- **TCM-Android**: Mobile Device Security Assessment
+- **Threat Modeling AI/ML Systems**: IruisRisk Certification
+- **Certified Secure Code Review**: Secure Code Review Specialist
+
+## Cyber Security Achievements & Honors
+- **Official Security Acknowledgments**: 12+ Hall of Fames including **Apple**, **Intel**, and **Nokia**.
+- **National Recognition**: Official appreciation from the **Government of India**.
+- **Exploit Author**: Verified Google Hacking Database (GHDB) Author with Exploit-DB (GHDB ID: 7834).
+- **CVE Discovery**: Discovered **CVE-2026-49141**, a high-severity (CVSS 7.1) authorization bypass vulnerability in the WACRM automation engine (Advisory: [VulnCheck](https://www.vulncheck.com/advisories/wacrm-authorization-bypass-via-automation-engine-endpoint)).
+
+## Tactical Arsenal & Competencies
+- **Web Application Security (95%)**: Full-scope vulnerability identification, manual exploitation, and strategic remediation advice.
+- **Source Code Review (90%)**: Extensive white-box testing, secure design verification, and logical flow analysis.
+- **API Security (90%)**: Thorough security audits of REST, GraphQL, and SOAP web API layers.
+- **Reverse Engineering & Automation (90%)**: Developing custom security scripts and tools to reduce remediation cycles.
+- **Network Security (85%)**: Mapping network architectures and auditing perimeter defenses.
+- **Adversary Simulation / Red Teaming (85%)**: Simulating real-world threat actors to stress-test organizational resilience.
+- **CI/CD & DevSecOps (80%)**: Integrating security pipelines into software development lifecycles.
+- **Android Security (80%)**: Static and dynamic mobile security analysis using runtime instrumentation.
+- **EDR Evasion (75%)**: Advanced payload customization, memory bypasses, and behavior-based defense evasion.
+
+## Tactical Directives
+- **EDR Evasion (Stealth Operations)**: Custom payload development and behavior bypass strategies designed to bypass modern Endpoint Detection and Response systems.
+- **Runtime Instrumentation (Mobile Deep Dive)**: Performing deep dynamic analysis on Android targets using tools like **Frida**, **MobSF**, and **Objection** to trace API calls and find logic flaws.
+- **Workflow Automation (Efficiency Optimization)**: Building custom automation scripts in Python to optimize assessment speed, reducing remediation cycle times by 25%.
+- **Social Engineering (Human Layer)**: Designing, deploying, and managing scalable phishing infrastructures to assess organizational susceptibility to social engineering attacks.
+
+## Important Links & Contacts
+- **Primary Uplink (Email)**: [midhunmohan1999.mm@gmail.com](mailto:midhunmohan1999.mm@gmail.com)
+- **GitHub Profile**: [mrgr4yhat](https://github.com/mrgr4yhat) - Custom tools, automation scripts, and research.
+- **LinkedIn**: [Midhun Mohanan LinkedIn](https://www.linkedin.com/in/mrgr4yhat/) - Professional engagements and networking.
+- **Twitter / X**: [@mrgr4yhat](https://x.com/mrgr4yhat) - Security insights, updates, and research posts.
+- **Exploit-DB GHDB Profile**: [GHDB Profile](https://www.exploit-db.com/ghdb/7834) - Google Hacking Database verified exploits.
+- **Instagram**: [@midhun.mohanan_](https://www.instagram.com/midhun.mohanan_) - Personal feed.
