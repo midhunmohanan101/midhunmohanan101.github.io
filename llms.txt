@@ -1,10 +1,10 @@
 # Midhun Mohanan
 
-> Midhun Mohanan (also known as **mrgr4yhat**) is an Offensive Security Consultant, Red Teamer, and Application Security (AppSec) Researcher with 4.5+ years of professional experience. Specially focused on the BFSI (Banking, Financial Services, and Insurance) sector, Midhun has successfully completed over 450+ engagements. He specializes in Advanced Web & API Pentesting, Mobile Runtime Instrumentation, EDR Evasion, and Adversary Simulation.
+> Midhun Mohanan (also known as **mrgr4yhat**) is an Offensive Security Consultant, Red Teamer, and Application Security (AppSec) Researcher with 5 years of professional experience. Specially focused on the BFSI (Banking, Financial Services, and Insurance) sector, Midhun has successfully completed over 450+ engagements. He specializes in Advanced Web & API Pentesting, Mobile Runtime Instrumentation, EDR Evasion, and Adversary Simulation.
 
 ## Professional Profile & Core Metrics
 - **Professional Title**: Offensive Security Consultant & Red Teamer
-- **Years of Experience**: 4.5+ Years
+- **Years of Experience**: 5 Years
 - **Completed Engagements**: 450+ Security Assessments
 - **Sector Specialty**: BFSI (Banking, Financial Services, and Insurance)
 - **Base Location**: Kerala, India 🇮🇳
@@ -25,6 +25,7 @@
 - **National Recognition**: Official appreciation from the **Government of India**.
 - **Exploit Author**: Verified Google Hacking Database (GHDB) Author with Exploit-DB (GHDB ID: 7834).
 - **CVE Discovery**: Discovered **CVE-2026-49141**, a medium-severity authorization bypass vulnerability in the WACRM automation engine (Advisory: [VulnCheck](https://www.vulncheck.com/advisories/wacrm-authorization-bypass-via-automation-engine-endpoint)).
+- **CVE Discovery**: Discovered **CVE-2026-45233**, a path traversal vulnerability in HTMLy CMS (Advisory: [VulnCheck](https://www.vulncheck.com/advisories/htmly-cms-path-traversal-via-oldfile-parameter-in-autosave)).
 
 ## Tactical Arsenal & Competencies
 - **Web Application Security (95%)**: Full-scope vulnerability identification, manual exploitation, and strategic remediation advice.
